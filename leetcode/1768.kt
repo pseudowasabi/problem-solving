@@ -1,3 +1,4 @@
+// merge-strings-alternately
 class Solution {
     fun mergeAlternately(word1: String, word2: String): String {
         var i = 0; var j = 0
