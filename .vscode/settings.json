@@ -41,6 +41,7 @@
         "variant": "cpp",
         "algorithm": "cpp",
         "map": "cpp",
-        "iomanip": "cpp"
+        "iomanip": "cpp",
+        "vector": "cpp"
     }
 }
