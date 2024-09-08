@@ -51,6 +51,7 @@
         "charconv": "cpp",
         "optional": "cpp",
         "unordered_map": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "set": "cpp"
     }
 }
