@@ -3,14 +3,24 @@
 #include <utility>
 using namespace std;
 
-pair<int, int> recursion(string s, int l, int r, int depth) {
-    if(l >= r) return make_pair(1, depth);
-    else if(s[l] != s[r]) return make_pair(0, depth);
-    else return recursion(s, l+1, r-1, depth + 1);
+pair<int, int> recursion(string s, int l, int r) {
+    
+    int depth = 1;
+    int isPal = 1;
+    for (; l < r;) {
+        if (s[l] != s[r]) {
+            isPal = 0;
+            break;
+        }
+        l++; r--;
+        depth++;
+    }
+
+    return make_pair(isPal, depth);
 }
 
 pair<int, int> isPalindrome(string s) {
-    return recursion(s, 0, s.length() - 1, 1);
+    return recursion(s, 0, s.length() - 1);
 }
 
 int main() {
